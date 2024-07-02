@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>canvas要素のサンプル</title>
+  <style>
+    #canvas1{
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas1"></canvas>
+  <!-- canvas要素は、JavaScriptによって描画できる要素である。↑ -->
+  <script type="text/javascript">
+    onload = function(){
+      var line1 = document.getElementById("canvas1").getContext("2d");
+      line1.beginPath();
+      line1.moveTo(50, 20);
+      line1.lineTo(250, 100);
+      line1.stroke();
+      line1.fillText("線サンプル", 15,15);
+    }
+  </script>
+</body>
+</html>

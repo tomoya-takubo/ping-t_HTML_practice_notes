@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas要素のサンプル</title>
+  <style>
+    #canvas1 {
+      background-color: aqua;
+    }
+    #canvas2 {
+      background-color: yellow;
+    }
+    #canvas3 {
+      background-color: pink;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <canvas id="canvas1" width="300" height="300"></canvas>
+    <canvas id="canvas2" width="300" height="300"></canvas>
+    <canvas id="canvas3" width="300" height="300"></canvas>
+  </div>
+  <script type="text/javascript">
+  onload = function() {
+    var line1 = document.getElementById("canvas1").getContext("2d");
+      // 直線を描画
+      line1.beginPath();
+      line1.moveTo(50, 20);
+      line1.lineTo(250, 220);
+      line1.stroke();
+
+      // テキストを配置（文字塗りつぶし？）
+      line1.fillText("線サンプル", 15, 15);
+
+    var square1 = document.getElementById("canvas2").getContext("2d");
+      // 四角形を描画（中身充填）
+      square1.beginPath();
+      square1.fillStyle = "red";
+      square1.fillRect(50, 20, 200, 100);
+      square1.strokeRect(50, 140, 200, 100);
+
+      // テキストを配置（文字塗りつぶし？）
+      square1.fillText("矩形サンプル", 15, 15);
+
+    var circle1 = document.getElementById("canvas3").getContext("2d");
+      // 円を描画（半時計方向）
+      circle1.beginPath();
+      circle1.arc(150, 120, 100, 0, Math.PI *2, false);
+      circle1.stroke();
+
+      // 弧（４分の３）を描画（半時計方向）
+      circle1.beginPath();
+      circle1.arc(150, 120, 75, 0, Math.PI + Math.PI/2, false);
+      circle1.stroke();
+
+      // 弧（２分の１）を描画（時計方向）
+      circle1.beginPath();
+      circle1.arc(150, 120, 50, 0, Math.PI, true)
+      circle1.stroke()
+
+      // テキストを配置（文字輪郭だけ？）
+      circle1.strokeText("円サンプル", 15, 15)
+  }
+  </script>
+</body>
+</html>
+
+<!-- beginPath()メソッドについては以下を参照。
+https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D/beginPath -->
+
+<!-- arc()メソッドについては以下を参照。
+https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D/arc -->
