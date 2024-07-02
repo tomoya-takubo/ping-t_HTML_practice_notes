@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>★ルビ関連の要素のサンプル</title>
+</head>
+<body>
+  <p>①ruby要素、rt要素、rp要素</p>
+  <ruby>
+    聖徳太子<rp>（</rp><rt>しょうとくたいし</rt><rp>）</rp>
+  </ruby>
+
+  <p>②rb要素（、rt要素）、rtc要素</p>
+  <ruby>
+    <rb>聖</rb><rb>徳</rb><rb>太</rb><rb>子</rb>
+    <rtc><rt>しょう</rt><rt>とく</rt><rt>たい</rt><rt>し</rt></rtc>
+    <rtc><rt>sho</rt><rt>toku</rt><rt>tai</rt><rt>shi</rt></rtc>
+  </ruby>
+</body>
+</html>
+
+<!-- rb要素は、ルビを振る対象のテキストを表します。rb要素は必ず使用する必要はありませんが、漢字を複数に分割してそれぞれをrt要素と関連付ける場合に使用します。
+  -->

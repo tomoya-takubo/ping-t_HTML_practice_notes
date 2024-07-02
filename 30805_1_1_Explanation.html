@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>script要素 および noscript要素のサンプル</title>
+  <!-- <script src="\30805_1_1_Explanation.js"></script> ←これだとダメ-->
+  <!-- <script src="/30805_1_1_Explanation.js"></script> ←これもダメ-->
+  <script src="30805_1_1_Explanation.js"></script>  <!-- これならOK -->
+</head>
+<body>
+  <p>①【要素内容】としてスクリプトを書き込む</p>
+  <script type="text/javascript">
+    var i;
+    for(i=1; i<=10; i++)
+    document.write("これは"+i+"行目です。<br>");
+  </script>
+
+  <p>②src属性で読み込んだ「30805_1_1_Explanation.js」スクリプト（7行目参照）内のhyouji関数を呼び出す。</p>
+  <script>hyouji()</script>
+  <noscript><p>このページではJSを利用していますが、現在実行できません。</p></noscript>
+</body>
+</html>
+
+<!-- ★ブラウザ側（chrome）でjavascriptの使用を許可しないように設定して
+noscriptの要素内容を表示してみよう！
+ → chromeの設定から、contents - JavaScript より「サイトに JavaScript の使用を許可しない」のラジオボタンを押す。 -->
