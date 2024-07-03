@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scirpt要素、noscript要素のサンプル</title>
+    <script src="30759_1_1_Explanation.js"></script>
+  </head>
+  <body>
+    <p>①スクリプトを要素として書き込む</p>
+    <script type="text/javascript">
+      var i;
+      for(i=1; i<=10; i++)
+      document.write(`これは${i}行目です。<br>`)
+    </script>
+
+    <p>②src属性で読み込んだ「30759_1_1_Explanation.js」スクリプトのhyouji関数を呼び出す</p>
+    <!-- <script src="30759_1_1_Explanation.js">hyouji()</script> -->
+    <script>hyouji()</script>
+    <noscript><p>このページではJSを使用していますが現在実行できません。</p></noscript>
+</body>
+</html>
+
+<!-- script要素のtype属性のデフォルト値が「text/javascript」のため、JavaScriptを読み込む際はtype属性を省略できます。
+script要素は、...head要素やbody要素の中に記述できます。 -->
