@@ -1,0 +1,36 @@
+<!-- 9行目のようにリセットファイルを充てることを宣言すると、本問題の答えの通りの表示とならない。 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ボックスモデルのサンプル</title>
+  <!-- <link rel="stylesheet" href=".//destyle.css"> -->
+  <style>
+    div{
+      width: 100px;
+      height: 80px;
+      margin: 80px 40px 5px;
+      padding: 60px;
+      border: 10px solid #000000;
+    }
+    span{
+      /*↑span要素のようなインライン要素の幅と高さを変更したかったら、左記のようにインラインブロック要素に変更するように宣言する必要がある。*/
+      /* display: inline-block;
+      width: 96px;
+      height: 96px; */
+      background-color: #FFFF00;
+    }
+    p {
+      /* margin: 8px; */
+      background-color: #D3D49B;
+    }
+  </style>
+</head>
+<body>
+  <p>ボックスの上側の文字です。</p>
+  <div><span>要素の内容です。周りに余白(padding)があります。</span></div>
+  <p>ボックスの下側の文字です。</p>
+</body>
+</html>
