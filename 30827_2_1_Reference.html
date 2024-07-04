@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>details要素、summary要素、datalist要素、keygen要素、output要素のサンプル</title>
+</head>
+<body>
+  <p>①details要素、summary要素</p>
+  <details>
+    <summary>クリックして入力方法を表示</summary>
+    <dl>
+      <dt>details要素: 表示、非表示を切替えられる詳細情報のウィジェットを表す。また、summary要素でキャプションを付けられる。</dt>
+      <dt>datalist要素: 入力欄で入力候補としてユーザーに提案するデータのリストを定義する。血液型とか。</dt>
+      <dt>output要素: 左右のボックスそれぞれに数値を入力すると、足し算の結果が表示されます。</dt>
+      <dt>keygen要素: 暗号化の強度を選んで（keygen要素をサポートしているブラウザでのみ表示される）、「公式鍵を送信」ボタンをクリックします。</dt>
+    </dl>
+  </details>
+
+  <p>②datalist要素</p>
+  <p>血液型は何ですか？<input type="text" autocomplete="on" list="blood-type"></p>
+  <datalist id="blood-type">
+    <option value="A">
+    <option value="B">
+    <option value="O">
+    <option value="AB">
+  </datalist>
+
+  <p>③output要素</p>
+  <form onsubmit="return false" oninput="add.value=a.valueAsNumber + b.valueAsNumber">
+    <input type="number" name="a"> + <input type="number" name="b"> =
+    <output name="add"></output>
+  </form>
+
+  <p>④keygen要素</p>
+  <form action="generatekey.cgi" method="post">
+    <p><keygen name="pubkeycrypto" keytype="rsa"></p>
+    <p><input type="submit" value="公開鍵を送信"></p>
+  </form>
+
+</body>
+</html>

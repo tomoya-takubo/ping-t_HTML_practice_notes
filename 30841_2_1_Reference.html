@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マルチカラムレイアウト関連のプロパティのサンプル</title>
+  <style>
+    div{
+      columns: 150px auto;
+      column-rule: 3px dotted blue;
+      column-gap: 30px;
+    }
+    h3{
+      column-span: all;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>マルチカラムレイアウト（この部分はカラムをまたがって表示しています。）</h3>
+    <p>
+      columnsはカラムの幅と数を順に指定します。幅と数のデフォルト値はどちらも「auto（自動）」です。<br>
+      column-widthはカラムの幅、column-countはカラムの数を指定します。デフォルト値はどちらも「auto（自動）」です<br>
+      column-ruleは、カラムの区切り線の幅、スタイル、色を順に指定します。<br>
+      column-rule-widthはカラムの区切り線の幅、column-rule-styleはカラムのスタイル、column-rule-colorはカラムの色をぞれぞれ指定します。<br>
+      column-gapはカラムの間隔を指定します。<br>
+      column-spanは、要素がカラムをまたがって表示する場合に指定します。デフォルト値は「none」でカラムをまたがらず、値「all」で全てのカラムをまたがって表示します。</p>
+    
+    </p>
+  </div>
+</body>
+</html>

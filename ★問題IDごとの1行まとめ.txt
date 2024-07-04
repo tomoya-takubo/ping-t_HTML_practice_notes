@@ -47,3 +47,7 @@
 31052：ボックスサイズは、width/heightに(padding+order+margin)*2足した数値となる。
 30921：input要素は、type属性に指定する値によって、カラーピッカーなどの様々な種類の入力欄を作成するから要素である。
 　　　（typeに指定できる値は右記URLを参照→https://mondai.ping-t.com/question_subjects/67/question_sessions/25540352/progressing_questions/392031597/edit?no_selection=false#:~:text=%E6%AC%84%E3%81%AE%E5%80%A4-,input%E8%A6%81%E7%B4%A0%E3%81%AFtype%E5%B1%9E%E6%80%A7%E3%81%AE%E5%80%A4%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%80%81%E5%85%A5%E5%8A%9B%E6%AC%84%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%BE%E3%81%99%E3%80%82,-%E4%BE%8B)%20type%E5%B1%9E%E6%80%A7）
+31098：（よくわからず。一旦飛ばす）
+30827：details要素は、表示非表示を切替えられる詳細情報のウィジェットを表す。またsummary要素でキャプションが付けられる。
+30795：figure要素はの構成要素の内、表を示すfigcaption要素は１つのみ指定でき、先頭または最後のいずれかに挿入できる。
+30841：マルチカラムレイアウト（columns-XXXオプション関連）では新聞記事のように、複数列で文字や図を配置するWebページの段組みを簡単に実装できる。
