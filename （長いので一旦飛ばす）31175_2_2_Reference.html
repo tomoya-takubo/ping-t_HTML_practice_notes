@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メディアクエリのサンプル</title>
+  <style>
+    body{
+      background-color: #00FFFF;
+    }
+    @media screen and (min-width: 480px) {  /* min-widthとは、「最小でも480px」=「480px以上」 */
+      body{background-color: #FF0000;}
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {  /* 「最小でも480px」かつ「最大でも1024px」（max-width）=480px以上~1024px */
+      body{background-color: #00FF00;}
+    }
+    @media screen and (min-width: 1024px) {  /* 「最小でも1024px」 */
+      body{background-color: #0000FF;}
+    }
+
+    /* orientation: landscapeについて
+        デバイスの向き。スマホの縦横回転を想像しよう。ブラウザだと横辺つまんでビョンビョンさせるイメージ。
+        HTMLを表示している画面領域が縦長▯（縦の長さ > 横の長さ、portrait）か、
+        横長▭（縦の長さ < 横の長さ、landscape）かを指定する。*/
+    @media screen and (orientation: landscape) {
+      p{color: #FF0000;}
+    }
+    #img1{
+      max-width: 100%;
+    }
+    </style>
+</head>
+<body>
+  <p>画面の幅によって、背景色が変化します。</p>
+  <p>画面が縦長化横長化によって、文字の色が変化します。</p>
+  <img id="img1" src=".//31090_2_1_Reference.jpg">
+</body>
+</html>
