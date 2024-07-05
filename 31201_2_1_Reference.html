@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>●リストのいろいろな先頭記号</title>
+  <style>
+    /* 各listの先頭に小文字のローマ数字をi, ii, iii, ...のように付ける。また、 ローマ数字をテキストを表示する領域内に入れる。（inside）*/
+    .l1{
+      list-style-type: lower-roman;
+      list-style-position: inside;
+    }
+
+    /* 各listの先頭に、大文字の英字をA, B, C, ...のように付ける。また先頭文字はテキストを表示する領域外（padding内）に入れる。 */
+    .l2{
+      list-style: upper-alpha outside;
+    }
+
+    /* イロハニホヘト... */
+    .l3{
+      list-style: katakana-iroha;
+    }
+
+    /* 画像（アイコンみたい） */
+    .l4{
+      list-style-image: url(".//new_sample_img.jpg");
+    }
+
+    /* ドット（・）が四角になる */
+    .l5{
+      list-style: square;
+    }
+  </style>
+</head>
+<body>
+  <h3>●リストのいろいろな先頭記号</h3>
+  <ul class="l1">
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+  </ul>
+  <ul class="l2">
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+  </ul>
+  <ul class="l3">
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+  </ul>
+  <ul class="l4">
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+  </ul>
+  <ul class="l5">
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+  </ul>
+</body>
+</html>

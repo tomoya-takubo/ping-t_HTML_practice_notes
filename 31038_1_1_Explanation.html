@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transformプロパティのサンプル</title>
+  <style>
+    .t1{
+      transform: rotate(90deg);
+    }
+
+    .t2{
+      transform: scale(1.5, 1.5);
+    }
+    div{
+      width: 200px; height: 100px;
+      text-align: center;
+      line-height: 100px;
+      margin: 30px;
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <h3>★いろいろな変形（transform）</h3>
+  <div>変化なし</div>
+  <p>①右に90deg回転させる。</p><br>
+  <div class="t1">回転</div>
+  <br>
+  <p>②X方向にX倍、Y方向にY倍拡大させる。</p>
+  <div class="t2">拡大</div>
+</body>
+</html>

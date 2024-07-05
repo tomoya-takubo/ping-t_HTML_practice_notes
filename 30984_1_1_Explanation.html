@@ -4,8 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>疑似クラス(:checked、:focus、:enabled、:disabled、:empty、:root、lang()、:target、:not())のサンプル</title>
+  <style>
+    /* html用紙（HTML文章全体）の背景を水色にする */
+    :root{background-color: aqua;}
+
+    /* input要素でチェックボックスやラジオボタンが選択された状態であれば、input要素の右側の余白を100pxにする */
+    input:checked{margin-right: 100px;}
+
+    /* input要素がマウスやTabキーで選択（フォーカス）された状態であれば、input要素の背景を緑にする */
+    input:focus{background-color: green;}
+
+    /* textarea要素が使用可能（有効）な状態であれば、textarea要素の背景を黄色にする */
+    textarea:enabled{background-color: yellow;}
+    
+    /* textarea要素が使用不可（無効）な状態であれば、textarea要素の背景を青色にする */
+    textarea:disabled{background-color: gray;}
+    
+    /* textarea要素の内容が空であれば、textarea要素の背景を青色にする */
+    textarea:empty{background-color: blue;}
+
+    /* div要素の言語コードが「en」であれば、div要素の文字の色を赤にする */
+    div:lang(en){color: red;}
+
+    /* リンク先のURLにアンカーが含まれていれば、リンク先ターゲットであるp要素の背景をピンクにする */
+    p:target{background-color: pink;}
+
+    /* class属性の値に「foo」が設定されていないli要素の文字の色を黄色にする */
+    li:not(.foo){color: yellow;}
+
+  </style>
 </head>
 <body>
   <h3>※疑似クラス「:root」の影響により、背景が水色になっています。</h3>
+  <!-- チェックボックス -->
+  <p>●:checked</p>
+  <input type="checkbox">チェックすると文字が右に動きます。
+
+  <!-- テキストボックス -->
+  <p>●:focus</p>
+  <input type="text">
+
+  <!-- テキストエリア（有効、つまり使用可） -->
+  <p>●:enabled</p>
+  <textarea>使用可</textarea>
+
+  <!-- テキストエリア（無効、つまり使用不可） -->
+  <p>●:disabled</p>
+  <textarea disabled="disabled">使用不可</textarea>
+
+  <!-- テキストエリア（空） -->
+  <p>●:empty</p>
+  <textarea></textarea>
+
+  <!-- div要素（en） -->
+  <p>●:lang(xx)</p>
+  <div lang="en">Hello!</div>
+
+  <!-- リンク先に影響を及ぼす -->
+  <p>●:target</p>
+  <a href="#target1">クリックすると、ターゲットの背景がピンク色になります。</a>
+
+  <p>●:not(yyy)</p>
+  <ul>
+    <li>項目1</li>
+    <li class="foo">項目2</li>
+    <li>項目3</li>
+  </ul>
+
+  <p id="target1">●ここがターゲットです。</p>
+
 </body>
 </html>
