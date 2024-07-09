@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvasに映像を描画するサンプル</title>
+</head>
+<body>
+  <h3>●video要素</h3>
+  <video id="v1" controls muted>
+    <source src=".\\31176_1_1_Explanation.webm" type="video/webm">
+  </video>
+  <div><button id="but1">表示中の映像をCanvasに描画 ↓</button></div>
+
+  <h3>●canvas要素</h3>
+  <canvas id="can1" width="400" height="200"></canvas>
+  <script type="text/javascript">
+    var video = document.getElementById("v1")
+    var button = document.getElementById("but1")
+    var canvas = document.getElementById("can1")
+
+    // ボタンを押すと、Canvasに映像を描画する
+    button.addEventListener("click", function(){
+      canvas.getContext("2d").drawImage(video, 0, 0, 400, 200)
+    })
+  </script>
+</body>
+</html>

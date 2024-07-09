@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-indexプロパティのサンプル</title>
+  <style>
+    #p1{
+      top:0px; left: 0px;
+      z-index: 0;
+      background-color: pink;
+    }
+    #p2{
+      top:20px; left: 52px;
+      z-index: -1;
+      background-color: yellow;
+    }
+    #p3{
+      top:40px; left: 40px;
+      z-index: 0;
+      background-color: green;
+    }
+    p{
+      position: absolute;
+      width: 55px; height: 55px;
+      border: 1px solid black;
+      text-align: center;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <p id="p1">p要素1</p>
+  <p id="p2">p要素2</p>
+  <p id="p3">p要素3</p>
+</body>
+</html>
