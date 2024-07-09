@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  li:not(.foo){color: red;}
+</style>
+<body>
+
+	<p>●:checked</p>
+	<input type="checkbox">チェックすると文字が右に動きます。
+
+	<p>●:focus</p>
+	<input type="text">
+
+	<p>●:enabled</p>
+	<textarea>使用可</textarea>
+
+	<p>●:disabled</p>
+	<textarea disabled="disabled">使用不可</textarea>
+
+	<p>●:empty</p>
+	<textarea></textarea>
+
+	<p>●:lang()</p>
+	<div lang="en">Hello!</div>
+
+	<p>●:target</p>
+	<a href="#target1">クリックすると、ターゲットの背景がピンク色になります。</a>
+
+	<p>●:not()</p>
+	<ul>
+		<li>項目1</li>
+		<li class="foo">項目2</li>
+		<li>項目3</li>
+	</ul>
+
+	<p id="target1">●ここがターゲットです。</p>
+
+</body>
+</html>
