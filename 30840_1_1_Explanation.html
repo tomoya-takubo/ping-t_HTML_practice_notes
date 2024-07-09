@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .overflow1{overflow: visible;}
+    .overflow2{overflow: hidden;}
+    .overflow3{overflow: scroll;}
+    .overflow4{overflow: auto;}
+    div{
+      width: 150px; height: 50px;
+      margin: 70px;
+      border: 2px solid green;
+    }
+  </style>
+</head>
+<body>
+	<div class="overflow1">■overflow:visible;<br>ボックスからはみ出た内容を表示します。デフォルト値です。</div>
+	<div class="overflow2">■overflow:hidden;<br>ボックスからはみ出た内容を表示しません。はみ出た部分は隠れます。</div>
+	<div class="overflow3">■overflow:scroll;<br>スクロールして全ての内容を見られます。</div>
+	<div class="overflow4">■overflow:auto;<br>ブラウザに依存しますが、通常はスクロールできます。</div>
+</body>
+</html>

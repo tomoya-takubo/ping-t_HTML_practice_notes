@@ -1,0 +1,12 @@
+div{
+  width: 100px; height: 100px;
+  position: absolute;
+}
+#box1{
+  background-color: blue;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+#box2{
+  background-color: yellow;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>async属性とdefer属性のサンプル</title>
+  <style>
+    #div1{
+      border: solid;
+    }
+  </style>
+</head>
+<body>
+  <p>●src属性でサンプルのJavaScriptファイルを読み込みます。</p>
+  <!-- async属性とdefer属性を同時に指定する -->
+   <script src="./30828_1_1_Explanation.js" async defer></script>
+   <div id="div1"><p>これはテストメッセージです。</p></div>
+   <noscript><p>このページではJavaScriptを使用していますが、現在、実行できません。</p></noscript>
+</body>
+</html>
