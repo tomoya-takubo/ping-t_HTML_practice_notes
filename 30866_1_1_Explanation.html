@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .test{
+      text-decoration: wavy underline red;
+    }
+    .pic{
+      background-image: url(./30866_1_1_Explanation.jpg);
+      width: 110px; height: 100px;
+    }
+    .pic1{
+      background-position: 0px 0px;
+    }
+    .pic2{
+      background-position: 0px -100px;
+    }
+    .pic3{
+      background-position: -110px 0px;
+    }
+    .pic4{
+      background-position: -110px -100px;
+    }
+  </style>
+</head>
+<body>
+  <p>●1つにまとめた画像</p>
+	<img src="./30866_1_1_Explanation.jpg">
+	<p class="test">●以下の画像は、上の画像をCSSスプライトで表示したものです。</p>
+	<p>左から0px、上から0pxの位置の画像を表示する</p>
+	<div class="pic pic1"></div>
+	<p>画像を上に100pxずらす(左から0px、上から100pxの位置の画像を表示する)</p>
+	<div class="pic pic2"></div>
+	<p>画像を左に110pxずらす(左から110px、上から0pxの位置の画像を表示する)</p>
+	<div class="pic pic3"></div>
+	<p>画像を左に110px、上に100pxずらす(左から110px、上から100pxの位置の画像を表示する)</p>
+	<div class="pic pic4"></div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #t1{hyphens: manual;}
+    #t2{hyphens: none;}
+    #t1{hyphens: auto;}
+  </style>
+</head>
+<body>
+	<p id="t1">●hyphens: 幅に収まらなければ、「-」を付けて単語内で改行します。→ Pneumonoultramicroscopic&shy;silicovolcanoconiosis</p>
+	<p id="t2">●none: ハイフネーションの位置を指定しても、ハイフネーションを行いません。→ Pneumonoultramicroscopic&shy;silicovolcanoconiosis</p>
+	<p id="t3">●auto: 幅に収まらなければ、ブラウザが自動で改行します。→ Pneumonoultramicroscopicsilicovolcanoconiosis</p>
+</body>
+</html>

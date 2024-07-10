@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リンク関連の疑似クラスのサンプル</title>
+  <style>
+    a:link{color: pink;}
+    a:visited{color: gray;}
+    p:active{color: red;}
+    div:hover{color: yellow;}
+  </style>
+</head>
+<body>
+  <p>●:link疑似クラス、:visited疑似クラス</p>
+  <a href="http://ping-t.com/" target="_blank">未訪問のリンクはピンク色、訪問済みのリンクは灰色になります。</a>
+  <p>●:active疑似クラス</p>
+	<p>アクティブなp要素の文字は赤色になります。</p>
+	<p>●:hover疑似クラス</p>
+	<div>マウスのカーソルを乗せたdiv要素の文字は黄色になります。</div>
+</body>
+</html>

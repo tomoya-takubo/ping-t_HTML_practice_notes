@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video要素、track要素のサンプル</title>
+</head>
+<body>
+  <h3>video要素、track要素</h3>
+  <video src="./sample.mp4" controls muted preload="auto">
+    <track kind="captions" src="./30926_1_1_Explanation.vtt" srclang="ja" label="Japanese" default>
+    <track kind="captions" src="./30926_1_2_Explanation.vtt" srclang="en" label="English">
+    <p>このブラウザでは動画を再生できません。</p>
+  </video>
+</body>
+</html>

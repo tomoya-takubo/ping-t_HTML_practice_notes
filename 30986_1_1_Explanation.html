@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>疑似要素(::before、::after、::first-line、::first-letter)のサンプル</title>
+  <style>
+    p::before{content: "これは";}
+    p::after{content: "です。";}
+    ul::first-line{color: red;}
+    ::first-letter{font-size: 40px;}
+  </style>
+</head>
+<body>
+  <p> p要素 </p>
+	<ul>
+		<li>項目1</li>
+		<li>項目2</li>
+		<li>項目3</li>
+	</ul>
+</body>
+</html>

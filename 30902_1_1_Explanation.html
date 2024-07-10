@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>positionプロパティのサンプル</title>
+  <style>
+    p{
+      position: relative;
+      height: 50px;
+      background-color: aqua;
+    }
+    span{
+      color: red;
+      font-weight: bold;
+    }
+    .position1{
+      position: static;
+      top: 20px;  /* position: static; により無効 */
+      left: 20px;  /* position: static; により無効 */
+      border: solid;
+    }
+    .position2{
+      position: relative;  /* 参考 -> https://developer.mozilla.org/ja/docs/Web/CSS/position#relative */
+      top: 20px; left: 20px;
+      border: solid;
+    }
+    .position3{
+      position: absolute;
+      top: 0px; left: 0px;
+      border: solid;
+    }
+    .position4{
+      position: fixed;  /* F12押して、表示領域（特に高さ方向）を狭くしてスクロールしてみること */
+      top: 20px; left: 20px;
+      border: solid;
+    }
+  </style>
+</head>
+<body>
+  <br><br><br>
+	<p>p要素1<span class="position1">staticの位置</span></p>
+	<p>p要素2<span class="position2">relativeの位置</span></p>
+	<p>p要素3<span class="position3">absoluteの位置</span></p>
+	<p>p要素4<span class="position4">fixedの位置</span></p>
+</body>
+</html>

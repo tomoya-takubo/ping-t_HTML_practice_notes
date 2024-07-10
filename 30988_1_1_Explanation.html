@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSSのサンプル</title>
+  <style>
+    div p{
+    /* h1+p{ <-☆ h1に隣接している（今回の場合、直下にいる）p要素「曇りのち晴れです」に適用される。 */
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>今日の天気</h1>
+    <p>曇りのち<strong>晴れ</strong>です。</p>
+    <div>
+      <p>暖かくなるでしょう。</p>
+    </div>
+  </div>
+</body>
+</html>
